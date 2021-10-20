@@ -49,7 +49,7 @@ export default function TextForm(props) {
 
                 <h3 style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>Text Summary</h3>
 
-                <p style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>{text.split(" ").filter((element)=>{return element.length!==0}).length} words & {text.length} characters</p>
+                <p style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words & {text.length} characters</p>
 
                 <hr style={{ color: props.mode === 'dark' ? 'white' : 'black' }} />
 
